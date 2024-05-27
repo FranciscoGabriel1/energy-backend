@@ -2,11 +2,8 @@ import express from "express";
 const { PrismaClient } = require("@prisma/client");
 
 const prisma = new PrismaClient();
-const path = require("path");
-const multer = require("multer");
 const app = express();
 
-// Use the PORT environment variable provided by Heroku
 const PORT = process.env.PORT || 3000;
 
 const { getInvoice } = require("./services/Invoice");
@@ -36,7 +33,6 @@ const gracefulShutdown = () => {
   });
 };
 
-// For app termination
 process.on("SIGINT", () => {
   gracefulShutdown();
 });
