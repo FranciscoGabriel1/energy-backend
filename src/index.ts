@@ -5,7 +5,10 @@ const prisma = new PrismaClient();
 const path = require("path");
 const multer = require("multer");
 const app = express();
-const PORT = 3000;
+
+// Use the PORT environment variable provided by Heroku
+const PORT = process.env.PORT || 3000;
+
 const { getInvoice } = require("./services/Invoice");
 
 app.use(express.json());
