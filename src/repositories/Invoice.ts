@@ -1,0 +1,29 @@
+import { Invoice } from "../models/Invoice";
+const { PrismaClient } = require("@prisma/client");
+const prisma = new PrismaClient();
+
+class InvoiceRepository {
+  async createInvoice(invoice: Invoice) {
+    try {
+      const newInvoice = await prisma.invoice.create({
+        data: invoice,
+      });
+      return newInvoice;
+    } catch (error) {
+      console.error("Failed to create new invoice:", error);
+      throw error;
+    }
+  }
+
+  async getInvoices() {
+    try {
+      const invoices = await prisma.invoice.findMany();
+      return invoices;
+    } catch (error) {
+      console.error("Error retrieving invoices:", error);
+      throw error;
+    }
+  }
+}
+
+module.exports = InvoiceRepository;

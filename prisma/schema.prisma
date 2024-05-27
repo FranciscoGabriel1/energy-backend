@@ -1,0 +1,21 @@
+// prisma/schema.prisma
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+model Invoice {
+    id                     String   @id @default(uuid()) @db.Char(40)
+    customerNumber         String   @db.Char(55)
+    referenceMonth         String   @unique @db.Char(25)
+    electricEnergyKWh      String   @db.Char(55)
+    electricEnergyValue    String   @db.Char(55)
+    compensatedEnergyKWh   String   @db.Char(55)
+    compensatedEnergyValue String   @db.Char(55)
+    publicLightingCharge   String   @db.Char(55)
+    createdAt              DateTime @default(now()) @map("created_at")
+}
