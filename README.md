@@ -22,7 +22,7 @@ git clone https://github.com/FranciscoGabriel1/energy-backend.git
 cd energy-backend
 
 ```
-### Instalação de depedências
+### Instalação de dependências
 
 
 ```bash 
@@ -48,8 +48,6 @@ npm start
 ### Testando a API
 Você pode testar a API usando ferramentas como Postman ou Insomnia:
 
-#### GET /get-invoice/
-- Retorna a fatura do cliente especificado pelo número.
 #### POST /create-invoices
 - Permite a criação de novas faturas.
 #### GET /get-invoice
