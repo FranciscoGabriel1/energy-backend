@@ -3,71 +3,68 @@
 Valores Faturados
 Itens da FaturaUnid.Quant.Preço UnitValor (R$) PIS/COFINSBase Calc.Aliq.ICMSTarifa Unit.
 ICMSICMS
-Energia ElétricakWh      50  0,95214489        47,59 0,74906000 
-Energia SCEE s/ ICMSkWh     627  0,50795289       318,47 0,48733000 
-Energia compensada GD IkWh     627  0,48733000      -305,55 0,48733000 
-Contrib Ilum Publica Municipal         49,43
-TOTAL        109,94
+Energia ElétricakWh     100  0,95214489        95,19 0,74906000 
+Energia SCEE s/ ICMSkWh   1.299  0,50795289       659,82 0,48733000 
+Energia compensada GD IkWh   1.299  0,48733000      -633,04 0,48733000 
+Contrib Ilum Publica Municipal         41,19
+TOTAL        163,16
 Histórico de Consumo
 MÊS/ANOCons. kWhMédia kWh/DiaDias
-DEZ/23     677     23,34   29
-NOV/23     675     21,09   32
-OUT/23     633     20,41   31
-SET/23     464     14,96   31
-AGO/23     420     14,00   30
-JUL/23     789     24,65   32
-JUN/23   1.057     34,09   31
-MAI/23   1.105     36,83   30
-ABR/23   1.383     44,61   31
-MAR/23   1.581     52,70   30
-FEV/23   1.114     38,41   29
-JAN/23   1.389     43,40   32
-DEZ/22   1.251     40,35   31
+DEZ/23   1.399     48,24   29
+NOV/23   1.088     36,26   30
+OUT/23   1.143     34,63   33
+SET/23     957     33,00   29
+AGO/23     585     17,72   33
+JUL/23     393     13,55   29
+JUN/23     617     19,90   31
+MAI/23   1.221     38,15   32
+ABR/23   1.341     44,70   30
+MAR/23   1.771     53,66   33
+FEV/23   1.343     47,96   28
+JAN/23   1.054     35,13   30
+DEZ/22   1.109     33,60   33
 Reservado ao Fisco
 SEM VALOR FISCAL
 Base de cálculo (R$)Alíquota (%)Valor (R$)
 Fale com CEMIG: 116 - CEMIG Torpedo 29810 - Ouvidoria CEMIG: 0800 728 3838 - Agência Nacional de Energia Elétrica - ANEEL - Telefone: 167 - Ligação gratuita de telefones fixos e móveis.
 Código de Débito AutomáticoInstalaçãoVencimentoTotal a pagar
-008046010818300005547909/01/2024R$109,94
-Dezembro/202383630000001-2 09940138003-7 91355535433-5 08046010818-8
-ATENÇÃO:
-DÉBITO AUTOMÁTICO
-PLIM TELECOMUNICACOES LTDA ME
-RUA JANUARIA 297 CS
-CENTRO
-39400-077 MONTES CLAROS, MG
-CNPJ 09.140.7**/****-**
-INSCRIÇÃO ESTADUAL 00104********
+008118741548300429811610/01/2024R$163,16
+Dezembro/202383690000001-6 63160138005-0 41375209033-7 08118741548-4
+BRONYER TOZATTI FERREIRA
+RUA JOAO DE ASSIS MARTINS 71 IN
+CENTRO SUL
+35182-036 TIMOTEO, MG
+CPF 097.7**.***-**
         Nº DO CLIENTE                      Nº DA INSTALAÇÃO
-  7005400387        3000055479
+  7202788969        3004298116
          Referente a                                Vencimento                       Valor a pagar (R$)
-    DEZ/2023               09/01/2024               109,94 
-NOTA FISCAL Nº 104601335 - SÉRIE 000
-Data de emissão: 26/12/2023
+    DEZ/2023               10/01/2024               163,16 
+NOTA FISCAL Nº 105189328 - SÉRIE 000
+Data de emissão: 27/12/2023
 Consulte pela chave de acesso em:
 http://www.sped.fazenda.mg.gov.br/spedmg/nf3e
 chave de acesso:
-31231206981180000116660001046013351042240792
-Protocolo de autorização: 1312300114559626
-27.12.2023 às 03:01:01
+31231206981180000116660001051893281016359302
+Protocolo de autorização: 1312300115642438
+28.12.2023 às 02:24:00
 ClasseSubclasseModalidade TarifáriaDatas de Leitura
-Comercial Serviços de Convencional B3AnteriorAtualNº de diasPróxima
-Bifásico Comunic. Telec06/1105/12 2905/01
+Comercial Outros serviços Convencional B3AnteriorAtualNº de diasPróxima
+Trifásico e outras atividades16/1115/12 2916/01
 Informações Técnicas
 Tipo de MediçãoMediçãoLeituraLeituraConstanteConsumo kWh
 AnteriorAtualde Multiplicação
-Energia kWhAPC13104395485.38586.0621677      
+Energia kWhAHB98800278837.14538.54411.399    
  
 DOCUMENTO AUXILIAR DA NOTA FISCAL DE ENERGIA ELÉTRICA ELETRÔNICASEGUNDA VIA
 CEMIG DISTRIBUIÇÃO S.A. CNPJ 06.981.180/0001-16 / INSC. ESTADUAL 062.322136.0087.
 AV. BARBACENA, 1200 - 17° ANDAR - ALA 1 - BAIRRO SANTO AGOSTINHO
 CEP: 30190-131 - BELO HORIZONTE - MG.TARIFA SOCIAL DE ENERGIA ELÉTRICA - TSEE FOI CRIADA PELA LEI Nº 10.438, DE 26 DE ABRIL DE 2002
 Informações Gerais
-SALDO ATUAL DE GERAÇÃO: 4.959,29 kWh. Tarifa vigente conforme Res Aneel nº 3.202, de 23/05/2023.
-Redução aliquota ICMS conforme Lei Complementar 194/22. Considerar nota fiscal quitada após débito em
-sua c/c. Unidade faz parte de sistema de compensação de energia. O pagamento desta conta não quita
-débitos anteriores. Para estes, estão sujeitas penalidades legais vigentes (multas) e/ou atualização financeira
-(juros)baseadas no vencimento das mesmas. Leitura realizada conforme calendário de faturamento. É dever
-do consumidor manter os dados cadastrais sempre atualizados e informar alterações da atividade exercida no
-local.   NOV/23 Band. Verde - DEZ/23 Band. Verde.
+SALDO ATUAL DE GERAÇÃO: 5.814,97 kWh. Tarifa vigente conforme Res Aneel nº 3.202, de 23/05/2023.
+Redução aliquota ICMS conforme Lei Complementar 194/22. Unidade faz parte de sistema de compensação
+de energia. O pagamento desta conta não quita débitos anteriores. Para estes, estão sujeitas penalidades
+legais vigentes (multas) e/ou atualização financeira (juros)baseadas no vencimento das mesmas. Leitura
+realizada conforme calendário de faturamento. É dever do consumidor manter os dados cadastrais sempre
+atualizados e informar alterações da atividade exercida no local. Faça sua adesão para recebimento da conta
+de energia por e-mail acessando www.cemig.com.br.  NOV/23 Band. Verde - DEZ/23 Band. Verde.
   

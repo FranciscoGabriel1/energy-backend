@@ -2,7 +2,31 @@ const fs = require("fs");
 const pdf = require("pdf-parse");
 const path = require("path");
 
-async function getInvoice() {
+async function getInvoices() {
+  const InvoiceRepository = require("../repositories/Invoice");
+  const invoiceRepository = new InvoiceRepository();
+  const result = await invoiceRepository.getInvoices();
+  result.sort((x, y) =>
+    tempConvertDate(x.referenceMonth).localeCompare(
+      tempConvertDate(y.referenceMonth)
+    )
+  );
+  return result;
+}
+
+async function getInvoiceByCustomerNumber(params: string) {
+  const InvoiceRepository = require("../repositories/Invoice");
+  const invoiceRepository = new InvoiceRepository();
+  let result = await invoiceRepository.getInvoiceByCustomerNumber(params);
+  result.sort((x, y) =>
+    tempConvertDate(x.referenceMonth).localeCompare(
+      tempConvertDate(y.referenceMonth)
+    )
+  );
+  return result;
+}
+
+async function createInvoices() {
   const InvoiceRepository = require("../repositories/Invoice");
   const invoiceRepository = new InvoiceRepository();
   const pdfDirectory = path.join(__dirname, "../../invoices");
@@ -85,14 +109,14 @@ async function getInvoice() {
           throw error;
         }
 
-        invoiceRepository.createInvoice({
-          customerNumber: dataInvoiceFoundList[0],
-          referenceMonth: dataInvoiceFoundList[1],
-          electricEnergyKWh: dataInvoiceFoundList[2],
-          electricEnergyValue: dataInvoiceFoundList[3],
-          compensatedEnergyKWh: dataInvoiceFoundList[4],
-          compensatedEnergyValue: dataInvoiceFoundList[5],
-          publicLightingCharge: dataInvoiceFoundList[6],
+        await invoiceRepository.createInvoice({
+          customerNumber: dataInvoiceFoundList[0] || "",
+          referenceMonth: dataInvoiceFoundList[1] || "",
+          electricEnergyKWh: dataInvoiceFoundList[2] || "",
+          electricEnergyValue: dataInvoiceFoundList[3] || "",
+          compensatedEnergyKWh: dataInvoiceFoundList[4] || "",
+          compensatedEnergyValue: dataInvoiceFoundList[5] || "",
+          publicLightingCharge: dataInvoiceFoundList[6] || "",
         });
         dataInvoiceFoundList.splice(0, dataInvoiceFoundList.length);
       }
@@ -101,7 +125,6 @@ async function getInvoice() {
     console.error("Error to get invoices:", error);
     throw error;
   }
-  return invoiceRepository.getInvoices();
 }
 
 function findContentInvoice(text, regex) {
@@ -115,4 +138,27 @@ function findContentInvoice(text, regex) {
   return contentRow;
 }
 
-module.exports = { getInvoice };
+function tempConvertDate(dateStr) {
+  // console.log("**************");
+  // console.log(dateStr);
+  const months = {
+    JAN: "01",
+    FEV: "02",
+    MAR: "03",
+    ABR: "04",
+    MAI: "05",
+    JUN: "06",
+    JUL: "07",
+    AGO: "08",
+    SET: "09",
+    OUT: "10",
+    NOV: "11",
+    DEZ: "12",
+  };
+  const parts = dateStr.split("/");
+  const month = months[parts[0]];
+  const year = parts[1];
+  return `${year}-${month}`;
+}
+
+module.exports = { getInvoices, createInvoices, getInvoiceByCustomerNumber };

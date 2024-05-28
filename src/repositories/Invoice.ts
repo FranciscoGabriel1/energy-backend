@@ -24,6 +24,19 @@ class InvoiceRepository {
       throw error;
     }
   }
+
+  async getInvoiceByCustomerNumber(customerNumber: string) {
+    try {
+      const invoice = await prisma.invoice.findMany({
+        where: {
+          customerNumber: customerNumber,
+        },
+      });
+      return invoice;
+    } catch (error) {
+      throw error;
+    }
+  }
 }
 
 module.exports = InvoiceRepository;
