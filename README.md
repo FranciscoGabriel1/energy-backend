@@ -49,6 +49,6 @@ npm start
 Você pode testar a API usando ferramentas como Postman ou Insomnia:
 
 #### POST /create-invoices
-- Permite a criação de novas faturas.
+- Extrai os dados da fatura e salva no banco de dados.
 #### GET /get-invoice
 - Lista todas as faturas disponíveis.
