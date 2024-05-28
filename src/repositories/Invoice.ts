@@ -3,6 +3,15 @@ const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 
 class InvoiceRepository {
+  async deleteAllInvoices() {
+    try {
+      await prisma.invoice.deleteMany({});
+    } catch (error) {
+      console.error("Error ao delete invoices:", error);
+      throw error;
+    }
+  }
+
   async createInvoice(invoice: Invoice) {
     try {
       const newInvoice = await prisma.invoice.create({

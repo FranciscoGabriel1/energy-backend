@@ -49,6 +49,8 @@ async function createInvoices() {
   ];
   let dataInvoiceFoundList: string[] = [];
 
+  await invoiceRepository.deleteAllInvoices();
+
   try {
     fs.readdir(pdfDirectory, async function (err, files) {
       if (err) {
