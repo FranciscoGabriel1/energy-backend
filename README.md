@@ -24,25 +24,33 @@ cd energy-backend
 ```
 ### Instalação de depedências
 
-```npm install
+
+```bash 
+npm install
 ```
+
 .env
-```DATABASE_URL="postgresql://<usuario>:<senha>@localhost:5432/lumi_energy_db?schema=public"
+```bash
+DATABASE_URL="postgresql://<usuario>:<senha>@localhost:5432/lumi_energy_db?schema=public"
 ```
 
 ### Rode as migrations do Prisma ORM
-```npx prisma migrate dev
+```bash
+npx prisma migrate dev
 ```
 
 ### rodando o projeto
 
-```npm start
+```bash
+npm start
 ``` 
 
 ### Testando a API
 Você pode testar a API usando ferramentas como Postman ou Insomnia:
 
--- GET /get-invoice/
+#### GET /get-invoice/
 - Retorna a fatura do cliente especificado pelo número.
--- POST /create-invoices - Permite a criação de novas faturas.
-GET /get-invoice - Lista todas as faturas disponíveis.
+#### POST /create-invoices
+- Permite a criação de novas faturas.
+#### GET /get-invoice
+- Lista todas as faturas disponíveis.
